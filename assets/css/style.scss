@@ -1,0 +1,53 @@
+@import "variables";
+@import "mixins";
+@import "components";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  // font-family: $ez-font-family;
+  font-family: 'Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba($color: $ez-text-color, $alpha: 0.6);
+  padding-top: 80px;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+
+
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: calc(100% - 200px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 1020px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 1320px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+  }
+}
