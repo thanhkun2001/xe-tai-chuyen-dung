@@ -1,0 +1,35 @@
+.type {
+  background: #eee;
+  border-top: 2px solid $red-color;
+  padding: 15px 0;
+  .type-content {
+    h3 {
+      margin: 0;
+      a {
+        font-size: 15px;
+        color: #333;
+        font-weight: bold;
+      }
+    }
+    .tag-type {
+      a {
+        color: $black-color;
+        cursor: pointer;
+        font: 13px/15px "Open Sans", sans-serif;
+        padding: 2px 5px;
+        margin: 2px;
+        display: inline-block;
+        border: solid 1px #eee;
+        background-color: $white-color;
+
+        &:hover {
+          color: $white-color;
+          background-color: $red-color;
+        }
+      }
+    }
+  }
+  .slide-brand {
+    padding: 15px 0;
+  }
+}

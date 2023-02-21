@@ -25,7 +25,9 @@ $(".slide-brand").slick({
   speed: 300,
   slidesToShow: 8,
   slidesToScroll: 8,
-  arrow:true,
+  arrow: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
   responsive: [
     {
       breakpoint: 992,
@@ -80,7 +82,7 @@ $('.banner').slick({
 var toggleButton = document.querySelector('.toggle-button');
 var toggleContent = document.querySelector('.toggle-content');
 
-toggleButton.addEventListener('click', function() {
+toggleButton.addEventListener('click', function () {
   if (toggleContent.style.display === 'none') {
     toggleContent.style.display = 'block';
   } else {

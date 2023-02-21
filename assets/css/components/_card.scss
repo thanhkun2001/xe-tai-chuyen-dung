@@ -1,0 +1,35 @@
+.card {
+  margin-bottom: 22px;
+  border-radius: 0;
+  background-color: $xtcd-gray-200-color;
+  .card-header {
+    background-color: $xtcd-purple-color;
+    color: $xtcd-white-color;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-size: 18px;
+  }
+  .list-group-flush {
+    .list-group-item {
+      font-size: 13px;
+      font-weight: bold;
+      &:after {
+        content: ">";
+        font-family: FontAwesome;
+        float: left;
+        font-size: 10px;
+        padding-right: 7px;
+      }
+
+      &:hover {
+        background-color: $xtcd-color-hover-bg;
+        color: $xtcd-color-hover-text;
+        cursor: pointer;
+
+        &:after {
+          color: #63b9ce;
+        }
+      }
+    }
+  }
+}
